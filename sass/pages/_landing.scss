@@ -1,5 +1,5 @@
 .landing {
-    height: 95vh;
+    height: 80vh;
     background-image: linear-gradient(to bottom right, rgba($color-primary, 0.75), rgba($color-secondary, 0.75)), url("../img/blocks.jpg");
     background-size: cover;
     background-position: bottom;
@@ -7,18 +7,18 @@
 
     &__text-area {
         position: absolute;
-        top: 30%;
+        top: 20%;
         left: 50%;
-        transform: translate(-50%, -30%);
+        transform: translate(-50%, -20%);
         text-align: center;
     }
 
     &__boxes {
         position: absolute;
-        top: 70%;
+        top: 75%;
         left: 5%;
         width: 90%;
-        transform: translateY(-70%);
+        transform: translateY(-75%);
 
         &--box {
             background-color: $color-white;
@@ -87,11 +87,18 @@
             resize: none;
             font-family: inherit;
             margin-bottom: 2rem;
+            transition: all .2s;
+
+            &:hover {
+                box-shadow: 0 2rem 3rem rgba($color-black, 0.15);
+                transform: translateY(-.85rem);
+            }
 
             &:focus {
                 outline: none;
                 border: 3px solid rgba($color-secondary, .6);
-                box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+                box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+                transform: translateY(-.15rem);
             }
 
         }
@@ -105,17 +112,25 @@
         margin-top: 4rem;
         cursor: pointer;
         padding: 1rem 1.8rem;
-        border-radius: 3px;
         border: 3px solid transparent;
         border-bottom: 3px solid $color-tertiary;
         background-color: inherit;
         font-size: 1.6rem;
         color: $color-dark-grey;
         transition: all .2s;
+        text-transform: uppercase;
+        font-family: inherit;
 
         &:hover {
             background-color: $color-tertiary;
-        }   
+            box-shadow: 0 2rem 3rem rgba($color-black, 0.15);
+            transform: translateY(-.85rem);
+        }
+
+        &:active {
+            box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+            transform: translateY(-.15rem);
+        }
 
         &:focus {
             outline: none;

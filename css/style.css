@@ -124,23 +124,23 @@ body {
       margin-right: 1rem; }
 
 .landing {
-  height: 95vh;
+  height: 80vh;
   background-image: linear-gradient(to bottom right, rgba(153, 221, 255, 0.75), rgba(0, 69, 139, 0.75)), url("../img/blocks.jpg");
   background-size: cover;
   background-position: bottom;
   position: relative; }
   .landing__text-area {
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 50%;
-    transform: translate(-50%, -30%);
+    transform: translate(-50%, -20%);
     text-align: center; }
   .landing__boxes {
     position: absolute;
-    top: 70%;
+    top: 75%;
     left: 5%;
     width: 90%;
-    transform: translateY(-70%); }
+    transform: translateY(-75%); }
     .landing__boxes--box {
       background-color: #FFF;
       opacity: .8;
@@ -191,26 +191,37 @@ body {
     border-bottom: 3px solid #3FD2C7;
     resize: none;
     font-family: inherit;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    transition: all .2s; }
+    .form__group--input:hover {
+      box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.15);
+      transform: translateY(-0.85rem); }
     .form__group--input:focus {
       outline: none;
       border: 3px solid rgba(0, 69, 139, 0.6);
-      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+      transform: translateY(-0.15rem); }
   .form__group--label {
     display: none; }
   .form__submit {
     margin-top: 4rem;
     cursor: pointer;
     padding: 1rem 1.8rem;
-    border-radius: 3px;
     border: 3px solid transparent;
     border-bottom: 3px solid #3FD2C7;
     background-color: inherit;
     font-size: 1.6rem;
     color: #323232;
-    transition: all .2s; }
+    transition: all .2s;
+    text-transform: uppercase;
+    font-family: inherit; }
     .form__submit:hover {
-      background-color: #3FD2C7; }
+      background-color: #3FD2C7;
+      box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.15);
+      transform: translateY(-0.85rem); }
+    .form__submit:active {
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+      transform: translateY(-0.15rem); }
     .form__submit:focus {
       outline: none;
       border: 3px solid #3FD2C7; }
