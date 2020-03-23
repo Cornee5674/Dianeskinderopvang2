@@ -13,7 +13,7 @@
                 <p class="paragraph">Hallo, ik ben Diane en gastouder.</p>
                 <p class="paragraph">Ik vang kinderen bij mij thuis op in <strong>Barneveld,</strong></p>
                 <p class="paragraph margin-bottom-small">In een kindvriendelijke wijk, de Vaarst.</p>
-                <a href="#" class="btn">Lees meer &rarr;</a>
+                <a href="#welcome-text" class="btn">Lees meer &rarr;</a>
             </div>
             <div class="landing__boxes">
                 <div class="row">
@@ -48,5 +48,56 @@
                 </div>
             </div>
         </section>
+
+        <section class="welcome">
+            <div class="row">
+                <div class="welcome__box welcome__box-normal">
+                    <div class="welcome__box--text-box" id="welcome-text">
+                        <h2 class="secondary-heading text-grey">Welkom</h2>
+                        <p class="paragraph">Welkom bij Diane's kinderopvang.</p>
+                        <br>
+                        <p class="paragraph">Hallo, ik ben Diane en gastouder. Ik vang kinderen bij mij thuis op in Barneveld, in een kindvriendelijke wijk, de Vaarst.</p>
+                        <br>
+                        <p class="paragraph">Ik ben getrouwd met Kees en samen hebben we drie prachtige kinderen: Iris, Naomi en Stef. De kinderen gaan overdag naar school. Samen met andere kinderen spelen, knutselen en zingen we samen, luisteren we naar verhaaltjes en doen we nog veel andere leuke dingen. Ik vind het heerlijk om met kinderen samen te zijn, met hen te spelen en hen te zien opgroeien. Ook uw kind wil ik een gezellige tijd bezorgen, waarin goede zorgen, met elkaar bezig zijn en veel lol hebben voorop staan. Op die manier kunt u uw kind met een gerust hart achterlaten bij Diane’s kinderopvang.</p>
+                        <br>
+                        <p class="paragraph">We hebben een leuke achterwacht, die in geval van nood de kinderen kan opvangen of ophalen.</p>
+                        <br>
+                        <p class="paragraph">Om een opvang van hoge kwaliteit te bieden, ben ik in augustus 2010 geslaagd voor mijn SPW 3-diploma. En ik heb ook een cursus over peuters en autisme gevolgd. Bovendien heb ik een certificaat voor het volgen van de cursus Kinder EHBO.</p>
+                        <br>
+                        <p class="paragraph">Ik ben aangesloten bij het gastouderbureau: het kuikentje en gastouder bureau Dolfijn.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form">
+            <div class="form__box">
+                <h1 class="secondary-heading text-grey margin-bottom-medium">Stuur een email</h1>
+                <form onsubmit="sendMail()" class="form__box--form">
+                    <div class="form__group">
+                        <input type="text" class="form__group--input" name="name" id="name" required placeholder="Uw volledige naam">
+                        <label for="name" class="form__group--label">Uw volledige naam</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" class="form__group--input" name="email" id="email" required placeholder="Uw e-mail adres">
+                        <label for="email" class="form__group--label">Uw e-mail adres</label>
+                    </div>
+                    <div class="form__group">
+                        <input type="text" class="form__group--input" name="subject" id="subject" required placeholder="Onderwerp">
+                        <label for="subject" class="form__group--label">Onderwerp</label>
+                    </div>
+                    <div class="form__group">
+                        <textarea type="text" class="form__group--input" name="body" id="body" required placeholder="Uw vraag of opmerking" rows=3></textarea>
+                        <label for="body" class="form__group--label">Uw vraag of opmerking</label>
+                    </div>
+                    <div class="form__group">
+                        <button class="form__submit" type="submit">Verstuur &rarr;</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+        <script src="js/mail.js"></script>
     </body>
 </html>

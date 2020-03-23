@@ -23,6 +23,9 @@
 .text-white {
   color: #FFF; }
 
+.text-grey {
+  color: #323232; }
+
 *,
 *:after,
 *:before {
@@ -113,6 +116,12 @@ body {
     width: calc((100% - 3 * 1rem) / 4); }
     .row__col-1-of-4:not(:last-child) {
       margin-right: 1rem; }
+  .row__col-1-of-2 {
+    float: left;
+    padding: 2rem;
+    width: calc((100% - 1rem) / 2); }
+    .row__col-1-of-2:not(:last-child) {
+      margin-right: 1rem; }
 
 .landing {
   height: 95vh;
@@ -138,7 +147,70 @@ body {
       padding: 2rem;
       border-radius: 5px;
       position: relative;
-      transition: all .2s; }
+      transition: all .2s;
+      box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4); }
       .landing__boxes--box:hover {
         transform: translateY(-2rem);
-        box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.15); }
+        box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.4); }
+
+.welcome {
+  background-color: #EEE;
+  padding: 8rem 0; }
+  .welcome__box {
+    width: 90%;
+    height: 50rem;
+    margin: 0 auto;
+    opacity: .9;
+    background-size: cover;
+    background-position: bottom;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
+    background-image: linear-gradient(105deg, #FFF 0%, #FFF 50%, transparent 50%), url("../img/woezel.jpg"); }
+    .welcome__box--text-box {
+      width: 50%;
+      text-align: center;
+      padding: 4rem; }
+
+.form {
+  background-image: linear-gradient(to bottom right, rgba(153, 221, 255, 0.9), rgba(0, 69, 139, 0.8));
+  padding: 8rem 0; }
+  .form__box {
+    width: 75%;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0 auto;
+    border-radius: 3px;
+    padding: 3rem;
+    text-align: center;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
+  .form__group--input {
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    width: 40%;
+    border-radius: 3px;
+    border: 3px solid transparent;
+    border-bottom: 3px solid #3FD2C7;
+    resize: none;
+    font-family: inherit;
+    margin-bottom: 2rem; }
+    .form__group--input:focus {
+      outline: none;
+      border: 3px solid rgba(0, 69, 139, 0.6);
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  .form__group--label {
+    display: none; }
+  .form__submit {
+    margin-top: 4rem;
+    cursor: pointer;
+    padding: 1rem 1.8rem;
+    border-radius: 3px;
+    border: 3px solid transparent;
+    border-bottom: 3px solid #3FD2C7;
+    background-color: inherit;
+    font-size: 1.6rem;
+    color: #323232;
+    transition: all .2s; }
+    .form__submit:hover {
+      background-color: #3FD2C7; }
+    .form__submit:focus {
+      outline: none;
+      border: 3px solid #3FD2C7; }
