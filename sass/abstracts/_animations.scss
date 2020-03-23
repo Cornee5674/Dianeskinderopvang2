@@ -1,0 +1,21 @@
+@keyframes fromTopToBottom {
+    0% {
+        transform: translateY(-12rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fromBottomToTop {
+    0% {
+        transform: translateY(12rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

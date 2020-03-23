@@ -1,0 +1,38 @@
+.landing {
+    height: 95vh;
+    background-image: linear-gradient(to bottom right, rgba($color-primary, 0.75), rgba($color-secondary, 0.75)), url("../img/blocks.jpg");
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+
+    &__text-area {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        text-align: center;
+    }
+
+    &__boxes {
+        position: absolute;
+        top: 70%;
+        left: 5%;
+        width: 90%;
+        transform: translateY(-70%);
+
+        &--box {
+            background-color: $color-white;
+            opacity: .8;
+            padding: 2rem;
+            border-radius: 5px;
+            position: relative;
+            transition: all .2s;  
+
+            &:hover {
+                transform: translateY(-2rem);
+                box-shadow: 0 2rem 3rem rgba($color-black, 0.15);
+            }
+        }
+    }
+}
+
