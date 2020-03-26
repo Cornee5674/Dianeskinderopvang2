@@ -33,8 +33,21 @@
   padding: 0;
   box-sizing: inherit; }
 
-html {
-  font-size: 62.5%; }
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 30%; } }
+
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 37.5%; } }
+
+@media only screen and (min-width: 1280px) {
+  html {
+    font-size: 50%; } }
+
+@media only screen and (min-width: 1920px) {
+  html {
+    font-size: 62.5%; } }
 
 body {
   box-sizing: border-box; }
@@ -123,6 +136,37 @@ body {
     .row__col-1-of-2:not(:last-child) {
       margin-right: 1rem; }
 
+.intro {
+  height: 90vh;
+  padding: 5rem;
+  background-image: linear-gradient(to right bottom, rgba(153, 221, 255, 0.9), rgba(0, 69, 139, 0.8));
+  position: relative; }
+  .intro__text-area {
+    text-align: center;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -15%); }
+  .intro__info-area {
+    width: 90%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%); }
+
+.main__text-area {
+  width: 85%;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
+  padding: 3.5rem;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  transition: all .2s; }
+  .main__text-area:hover {
+    transform: translateY(-2rem);
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.4); }
+
 .landing {
   height: 80vh;
   background-image: linear-gradient(to bottom right, rgba(153, 221, 255, 0.75), rgba(0, 69, 139, 0.75)), url("../img/blocks.jpg");
@@ -168,7 +212,6 @@ body {
     background-image: linear-gradient(105deg, #FFF 0%, #FFF 50%, transparent 50%), url("../img/woezel.jpg"); }
     .welcome__box--text-box {
       width: 50%;
-      text-align: center;
       padding: 4rem; }
 
 .form {
