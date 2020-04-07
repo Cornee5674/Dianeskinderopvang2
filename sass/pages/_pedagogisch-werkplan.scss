@@ -12,17 +12,23 @@
     }
 
     &__table {
-
-        &--table-row {
-        }
+        table-layout: fixed;
 
         &--table-header {
             padding: 1.5rem;
             font-size: 1.75rem;
+            border-right: 1px solid rgba($color-border-right, .85);
         }
 
         &--table-definition {
             padding: 1.5rem;
+        }
+
+        &--table-header-bottom {
+            width: calc(100% / 10);
+            padding: 1.75rem;
+            font-size: 1.75rem;
+            border-bottom: 1px solid rgba($color-border-right, .85);
         }
     }
 }
@@ -35,4 +41,18 @@
 .content-area {
     width: 90%;
     margin: 0 auto;
+}
+
+.indeling {
+    background-image: linear-gradient(to right bottom, rgba($color-primary, 0.9), rgba($color-secondary, 0.8));
+    padding: 8rem 0;
+
+    &__content {
+        width: 88%;
+        background-color: rgba($color-white, 0.8);
+        padding: 4rem;
+        margin: 0 auto;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+        text-align: center;
+    }
 }
