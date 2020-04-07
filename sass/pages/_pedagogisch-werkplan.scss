@@ -1,0 +1,38 @@
+.tables-section {
+    padding: 8rem 0;
+    background-color: $color-light-grey;
+
+    &__row-area {
+        background-color: $color-white;
+        margin: 0 auto;
+        padding: 4rem;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+        text-align: center;
+    }
+
+    &__table {
+
+        &--table-row {
+        }
+
+        &--table-header {
+            padding: 1.5rem;
+            font-size: 1.75rem;
+        }
+
+        &--table-definition {
+            padding: 1.5rem;
+        }
+    }
+}
+
+.horizontal-line {
+    margin: 3rem auto;
+    width: 65%;
+}
+
+.content-area {
+    width: 90%;
+    margin: 0 auto;
+}

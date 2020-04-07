@@ -1,0 +1,27 @@
+.footer {
+    background-color: $color-footer-background;
+
+    &__text-area {
+        padding: 1.8rem;
+        font-size: 1.6rem;
+
+        &--paragraph {
+            display: inline-block;
+            color: $color-white;
+            margin-right: 5rem;
+
+            &:first-child {
+                margin-left: 5rem;
+            }
+        }
+
+        &--right {
+            float: right;
+        }
+
+        &--link:link, &--link:visited {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+}
