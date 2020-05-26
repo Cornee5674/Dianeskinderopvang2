@@ -38,7 +38,7 @@
 
 @media only screen and (max-width: 600px) {
   html {
-    font-size: 30%; }
+    font-size: 45%; }
   .row__col-1-of-3 {
     width: 100%; }
   .landing {
@@ -52,21 +52,25 @@
 
 @media only screen and (min-width: 600px) {
   html {
-    font-size: 37.5%; }
+    font-size: 50%; }
   .row__col-1-of-3 {
-    width: calc((100% - 2 * 5rem) / 3); }
+    width: 100%; }
   .landing {
-    height: 94rem; }
+    height: 150rem; }
   .welcome__box {
-    background-image: linear-gradient(105deg, #FFF 0%, #FFF 70%, transparent 70%), url("../img/woezel.jpg"); }
+    background-image: linear-gradient(105deg, #FFF 0%, #FFF 50%, transparent 50%); }
     .welcome__box--text-box {
-      width: 70%; }
+      width: 100%; }
   .form__group--input {
     width: 60%; } }
 
 @media only screen and (min-width: 1280px) {
   html {
-    font-size: 50%; }
+    font-size: 56%; }
+  .landing {
+    height: 94rem; }
+  .row__col-1-of-3 {
+    width: calc((100% - 2 * 5rem) / 3); }
   .landing {
     height: 82rem; }
   .welcome__box {
