@@ -8,7 +8,7 @@
         padding: 4rem;
         border-radius: 3px;
         box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
-        text-align: center;
+        text-align: left;
     }
 
     &__table {
@@ -16,12 +16,13 @@
 
         &--table-header {
             padding: 1.5rem;
-            font-size: 1.75rem;
+            font-size: 1.6rem;
             border-right: 1px solid rgba($color-border-right, .85);
         }
 
         &--table-definition {
             padding: 1.5rem;
+            font-size: 1.4rem;
         }
 
         &--table-header-bottom {
@@ -31,6 +32,12 @@
             border-bottom: 1px solid rgba($color-border-right, .85);
         }
     }
+}
+
+.picture {
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
 }
 
 .horizontal-line {
@@ -46,13 +53,4 @@
 .indeling {
     background-image: linear-gradient(to right bottom, rgba($color-primary, 0.9), rgba($color-secondary, 0.8));
     padding: 8rem 0;
-
-    &__content {
-        width: 88%;
-        background-color: rgba($color-white, 0.8);
-        padding: 4rem;
-        margin: 0 auto;
-        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
-        text-align: center;
-    }
 }

@@ -1,5 +1,4 @@
 .landing {
-    height: 80vh;
     background-image: linear-gradient(to bottom right, rgba($color-primary, 0.75), rgba($color-secondary, 0.75)), url("../img/blocks.jpg");
     background-size: cover;
     background-position: bottom;
@@ -51,10 +50,7 @@
         background-position: bottom;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
         border-radius: 3px;
-        background-image: linear-gradient(105deg, $color-white 0%, $color-white 50%, transparent 50%), url("../img/woezel.jpg");
-
         &--text-box {
-            width: 50%;
             padding: 4rem;
         }
     }
@@ -79,7 +75,6 @@
         &--input {
             padding: 1.5rem;
             font-size: 1.6rem;
-            width: 40%;
             border-radius: 3px;
             border: 3px solid transparent;
             border-bottom: 3px solid $color-tertiary;
