@@ -8,13 +8,16 @@
 
 @media only screen and (max-width: 600px) {
     html {
-      font-size: 45%; 
+      font-size: 50%; 
     }
     .row__col-1-of-3 {
       width: 100%;
     }
+    .row__col-2-of-3 {
+      width: 100%;
+    }
     .landing {
-      height: 160rem;
+      height: 130rem;
     }
     .welcome__box {
       background-image: linear-gradient(105deg, $color-white 0%, $color-white 50%, transparent 50%);
@@ -25,17 +28,28 @@
     .form__group--input {
       width: 80%;
     }
+    .landing__text-area {
+      top: 5%;
+      left: 50%;
+      transform: translate(-50%, -5%);
+    }
+    .intro__107rem {
+      height: 160rem;
+    }
 }
   
   @media only screen and (min-width: 600px) {
     html {
-      font-size: 50%; 
+      font-size: 55%; 
     }
     .row__col-1-of-3 {
       width: 100%;
     }
+    .row__col-2-of-3 {
+      width: 100%;
+    }
     .landing {
-      height: 150rem;
+      height: 125rem;
     }
     .welcome__box {
       background-image: linear-gradient(105deg, $color-white 0%, $color-white 50%, transparent 50%);
@@ -46,17 +60,28 @@
     .form__group--input {
       width: 60%;
     }
+    .intro__107rem {
+      height: 150rem;
+    }
+    .landing__text-area {
+      top: 7%;
+      left: 50%;
+      transform: translate(-50%, -7%);
+    }
 }
   
   @media only screen and (min-width: 1280px) {
     html {
-      font-size: 56%; 
+      font-size: 59%; 
     } 
     .landing {
       height: 94rem;
     }
     .row__col-1-of-3 {
       width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+    }
+    .row__col-2-of-3 {
+      width: calc(66% - #{$gutter-horizontal});
     }
     .landing {
       height: 82rem;
@@ -70,12 +95,28 @@
     .form__group--input {
       width: 40%;
     }
+    .intro__107rem {
+      height: 112rem;
+    }
+    .landing__text-area {
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -10%);
+    }
 }
   
   @media only screen and (min-width: 1920px) {
     html {
       font-size: 62.5%; 
     } 
+    .intro__107rem {
+      height: 107rem;
+    }
+    .landing__text-area {
+      top: 13%;
+      left: 50%;
+      transform: translate(-50%, -13%);
+    }
 }
 
 body {

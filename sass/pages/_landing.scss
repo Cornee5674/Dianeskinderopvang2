@@ -6,9 +6,6 @@
 
     &__text-area {
         position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -20%);
         text-align: center;
     }
 
@@ -43,7 +40,7 @@
 
     &__box {
         width: 90%;
-        height: 50rem;
+        //height: 50rem;
         margin: 0 auto; 
         opacity: .9;
         background-size: cover;

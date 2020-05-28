@@ -38,39 +38,57 @@
 
 @media only screen and (max-width: 600px) {
   html {
-    font-size: 45%; }
-  .row__col-1-of-3 {
-    width: 100%; }
-  .landing {
-    height: 160rem; }
-  .welcome__box {
-    background-image: linear-gradient(105deg, #FFF 0%, #FFF 50%, transparent 50%); }
-    .welcome__box--text-box {
-      width: 100%; }
-  .form__group--input {
-    width: 80%; } }
-
-@media only screen and (min-width: 600px) {
-  html {
     font-size: 50%; }
   .row__col-1-of-3 {
     width: 100%; }
+  .row__col-2-of-3 {
+    width: 100%; }
   .landing {
-    height: 150rem; }
+    height: 130rem; }
   .welcome__box {
     background-image: linear-gradient(105deg, #FFF 0%, #FFF 50%, transparent 50%); }
     .welcome__box--text-box {
       width: 100%; }
   .form__group--input {
-    width: 60%; } }
+    width: 80%; }
+  .landing__text-area {
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%); }
+  .intro__107rem {
+    height: 160rem; } }
+
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 55%; }
+  .row__col-1-of-3 {
+    width: 100%; }
+  .row__col-2-of-3 {
+    width: 100%; }
+  .landing {
+    height: 125rem; }
+  .welcome__box {
+    background-image: linear-gradient(105deg, #FFF 0%, #FFF 50%, transparent 50%); }
+    .welcome__box--text-box {
+      width: 100%; }
+  .form__group--input {
+    width: 60%; }
+  .intro__107rem {
+    height: 150rem; }
+  .landing__text-area {
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -7%); } }
 
 @media only screen and (min-width: 1280px) {
   html {
-    font-size: 56%; }
+    font-size: 59%; }
   .landing {
     height: 94rem; }
   .row__col-1-of-3 {
     width: calc((100% - 2 * 5rem) / 3); }
+  .row__col-2-of-3 {
+    width: calc(66% - 5rem); }
   .landing {
     height: 82rem; }
   .welcome__box {
@@ -78,11 +96,23 @@
     .welcome__box--text-box {
       width: 50%; }
   .form__group--input {
-    width: 40%; } }
+    width: 40%; }
+  .intro__107rem {
+    height: 112rem; }
+  .landing__text-area {
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%); } }
 
 @media only screen and (min-width: 1920px) {
   html {
-    font-size: 62.5%; } }
+    font-size: 62.5%; }
+  .intro__107rem {
+    height: 107rem; }
+  .landing__text-area {
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -13%); } }
 
 body {
   box-sizing: border-box; }
@@ -159,8 +189,7 @@ body {
       margin-right: 5rem; }
   .row__col-2-of-3 {
     float: left;
-    padding: 2rem;
-    width: calc(66% - 5rem); }
+    padding: 2rem; }
   .row__col-1-of-4 {
     float: left;
     padding: 2rem;
@@ -223,7 +252,8 @@ body {
 .picture {
   margin: 0 auto;
   display: block;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  max-width: 80%; }
 
 .horizontal-line {
   margin: 3rem auto;
@@ -237,36 +267,13 @@ body {
   background-image: linear-gradient(to right bottom, rgba(153, 221, 255, 0.9), rgba(0, 69, 139, 0.8));
   padding: 8rem 0; }
 
-.intro {
-  padding: 5rem;
-  background-image: linear-gradient(to right bottom, rgba(153, 221, 255, 0.9), rgba(0, 69, 139, 0.8));
-  position: relative;
-  height: 82rem; }
-  .intro__107rem {
-    height: 107rem; }
-  .intro__text-area {
-    text-align: center;
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -15%); }
-  .intro__80top {
-    top: 80%;
-    transform: translate(-50%, -80%); }
-  .intro__60top {
-    top: 72%;
-    transform: translate(-50%, -72%); }
-  .intro__info-area {
-    width: 90%;
-    position: absolute;
-    left: 50%; }
-
 .main__picture {
   width: 85%;
   margin: 0 auto; }
   .main__picture--pic {
     margin: 0 auto;
-    display: block; }
+    display: block;
+    max-width: 100%; }
 
 .main__text-area {
   width: 85%;
@@ -288,9 +295,6 @@ body {
   position: relative; }
   .landing__text-area {
     position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -20%);
     text-align: center; }
   .landing__boxes {
     position: absolute;
@@ -315,7 +319,6 @@ body {
   padding: 8rem 0; }
   .welcome__box {
     width: 90%;
-    height: 50rem;
     margin: 0 auto;
     opacity: .9;
     background-size: cover;
