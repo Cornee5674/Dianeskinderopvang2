@@ -3,10 +3,22 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Diane's kinderopvang</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <header class='header'>
+            <div class="topnav" id="myTopnav">
+                <a href="landing.html">Diane's kinderopvang</a>
+                <a href="huisregels.html" class="active">Huisregels</a>
+                <a href="pedagogisch-werkplan.html">Pedagogisch werkplan</a>
+                <a href="tarieven.html">Tarieven</a>
+                <a href="javascript:void(0);" class="icon" onclick="header()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+        </header>
         <section class="landing intro__107rem">
             <div class="landing__text-area text-white">
                 <h1 class="heading-primary margin-bottom-small">Huisregels</h1>
@@ -20,50 +32,46 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="row__col-1-of-3">
-                        <div class="landing__boxes--box">
-                            <h3 class="tertiary-heading margin-bottom-small">Algemene regels</h3>
-                            <p class="paragraph">- De afzet- en ophaaltijden van uw kind kunnen overlegd worden, maar het is wel prettig voor de andere kinderen dat dit niet te lang duurt.</p>
-                            <br>
-                            <p class="paragraph">- Bij jonge kinderen hou ik een schriftje bij met wat er met uw kind is gebeurd die dag. Ook u kunt er het nodige inschrijven aan bijzonderheden die voor uw kind van belang zijn.</p>
-                            <br>
-                            <p class="paragraph">- Met vooral nat weer is het fijn dat uw kinderen voor het binnen spelen pantoffels hebben en niet met schoenen spelen.</p>
-                            <br>
-                            <p class="paragraph">- De kinderen liever geen eigen speelgoed mee laten nemen (met uitzondering van een slaapknuffel), anders moet het speelgoed in de tas, of iedereen mag ermee spelen. Ook neem ik geen verantwoording als het kwijt of kapot is.</p>
-                        </div>
-                    </div>
-                    <div class="row__col-1-of-3">
-                        <div class="landing__boxes--box">
-                            <h3 class="tertiary-heading margin-bottom-small">Specifieke regels</h3>
-                            <p class="paragraph">- Niet op de bank en stoelen staan.</p>
-                            <br>
-                            <p class="paragraph">- Niet in de keuken komen als ik aan het koken ben.</p>
-                            <br>
-                            <p class="paragraph">- Niet op de salontafel knutselen.</p>
-                            <br>
-                            <p class="paragraph">- Niet slaan met voorwerpen op de meubels of op andere kinderen.</p>
-                            <br>
-                            <p class="paragraph">- Aan tafel blijven zitten tot iedereen klaar is met eten.</p>
-                            <br>
-                            <p class="paragraph">- Niet vloeken.</p>
-                        </div>
-                    </div>
-                    <div class="row__col-1-of-3">
-                        <div class="landing__boxes--box">
-                            <h3 class="tertiary-heading margin-bottom-small">Benodigdheden</h3>
-                            <p class="paragraph">- Voldoende luiers (liefst voor 1 dag extra).</p>
-                            <br>
-                            <p class="paragraph">- Reservekleding.</p>
-                            <br>
-                            <p class="paragraph">- Eventueel regenkleding en laarzen.</p>
-                            <br>
-                            <p class="paragraph">- Eigen slaapknuffel.</p>
-                            <br>
-                            <p class="paragraph">- Baby- of speciale voeding.</p>
-                            <br>
-                            <p class="paragraph">- Andere benodigdheden zoals medicijnen, moet u ons steeds bezorgen.</p>
-                        </div>
+            </div>
+        </section>
+        <section class="welcome">
+            <div class="row">
+                <div class="welcome__box welcome__box_1 welcome__box-normal">
+                    <div class="welcome__box--text-box">
+                        <h2 class="secondary-heading text-grey margin-bottom-small">Algemene regels</h2>
+                        <p class="paragraph">- De afzet- en ophaaltijden van uw kind kunnen overlegd worden, maar het is wel prettig voor de andere kinderen dat dit niet te lang duurt.</p>
+                        <br>
+                        <p class="paragraph">- Bij jonge kinderen hou ik een schriftje bij met wat er met uw kind is gebeurd die dag. Ook u kunt er het nodige inschrijven aan bijzonderheden die voor uw kind van belang zijn.</p>
+                        <br>
+                        <p class="paragraph">- Met vooral nat weer is het fijn dat uw kinderen voor het binnen spelen pantoffels hebben en niet met schoenen spelen.</p>
+                        <br>
+                        <p class="paragraph">- De kinderen liever geen eigen speelgoed mee laten nemen (met uitzondering van een slaapknuffel), anders moet het speelgoed in de tas, of iedereen mag ermee spelen. Ook neem ik geen verantwoording als het kwijt of kapot is.</p>
+                        <br>
+                        <h2 class="secondary-heading text-grey margin-bottom-small margin-top-medium">Specifieke regels</h2>
+                        <p class="paragraph">- Niet op de bank en stoelen staan.</p>
+                        <br>
+                        <p class="paragraph">- Niet in de keuken komen als ik aan het koken ben.</p>
+                        <br>
+                        <p class="paragraph">- Niet op de salontafel knutselen.</p>
+                        <br>
+                        <p class="paragraph">- Niet slaan met voorwerpen op de meubels of op andere kinderen.</p>
+                        <br>
+                        <p class="paragraph">- Aan tafel blijven zitten tot iedereen klaar is met eten.</p>
+                        <br>
+                        <p class="paragraph">- Niet vloeken.</p>
+                        <br>
+                        <h2 class="secondary-heading text-grey margin-bottom-small margin-top-medium">Benodigdheden</h2>
+                        <p class="paragraph">- Voldoende luiers (liefst voor 1 dag extra).</p>
+                        <br>
+                        <p class="paragraph">- Reservekleding.</p>
+                        <br>
+                        <p class="paragraph">- Eventueel regenkleding en laarzen.</p>
+                        <br>
+                        <p class="paragraph">- Eigen slaapknuffel.</p>
+                        <br>
+                        <p class="paragraph">- Baby- of speciale voeding.</p>
+                        <br>
+                        <p class="paragraph">- Andere benodigdheden zoals medicijnen, moet u ons steeds bezorgen.</p>
                     </div>
                 </div>
             </div>

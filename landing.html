@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
         <script type="text/javascript">
             (function(){
@@ -13,6 +14,17 @@
         </script>
     </head>
     <body>
+        <header class='header'>
+            <div class="topnav" id="myTopnav">
+                <a href="landing.html" class="active">Diane's kinderopvang</a>
+                <a href="huisregels.html">Huisregels</a>
+                <a href="pedagogisch-werkplan.html">Pedagogisch werkplan</a>
+                <a href="tarieven.html">Tarieven</a>
+                <a href="javascript:void(0);" class="icon" onclick="header()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+        </header>
         <section class="landing">
             <div class="landing__text-area text-white">
                 <h1 class="heading-primary margin-bottom-small">Diane's kinderopvang</h1>
@@ -128,6 +140,14 @@
                 }).catch(() => {
                     alert("Er is iets fout gegaan, probeer het straks nog een keer.");
                 }); */
+            }
+            function header() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
             }
         </script>
     </body>

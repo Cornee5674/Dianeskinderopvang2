@@ -39,3 +39,25 @@
     }
 }
 
+.expand-button {
+    cursor: pointer;
+    padding: 1rem 1.8rem;
+    border: 3px solid transparent;
+    border-bottom: 3px solid $color-tertiary;
+    background-color: inherit;
+    font-size: 1.6rem;
+    color: $color-dark-grey;
+    transition: all .2s;
+    text-transform: uppercase;
+    font-family: inherit;
+
+    &:hover {
+        background-color: $color-tertiary;
+    }
+
+    &:focus {
+        outline: none;
+        border: 3px solid $color-tertiary;
+    }
+}
+
