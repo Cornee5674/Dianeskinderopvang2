@@ -20,7 +20,6 @@
         float: left;
         padding: 2rem;
         width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
-
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
         }
@@ -30,7 +29,7 @@
 
     &__col-1-of-2 {
         float: left;
-        width: calc((100% - #{$gutter-horizontal}) / 2);
+        padding: 2rem;
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
         }

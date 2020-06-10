@@ -25,3 +25,10 @@
     }
 }
 
+.linkie {
+    color: #191919;
+    text-decoration: none;
+    &:hover {
+        border-bottom: 2px solid #191919;
+    }
+}

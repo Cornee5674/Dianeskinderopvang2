@@ -1,5 +1,8 @@
 .landing {
-    background-image: linear-gradient(to bottom right, rgba($color-primary, 0.75), rgba($color-secondary, 0.75)), url("../img/blocks.jpg");
+    &--back {
+        background-image: linear-gradient(to bottom right, rgba($color-primary, 0.75), rgba($color-secondary, 0.75)), url("../img/blocks.jpg");
+    }
+    background-image: linear-gradient(to bottom right, rgba($color-primary, 0.75), rgba($color-secondary, 0.75));
     background-size: cover;
     background-position: bottom;
     position: relative;
